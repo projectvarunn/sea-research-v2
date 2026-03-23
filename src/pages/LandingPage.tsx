@@ -22,17 +22,22 @@ const activeCountries = [
     path: "/bangladesh",
     teaser: "~USD 1.2B market projected to ~USD 3.8B by 2031 at 21% CAGR under Smart Bangladesh Vision 2041.",
   },
+  {
+    flag: "🇲🇾",
+    name: "Malaysia",
+    path: "/malaysia",
+    teaser: "RM 2.62B HRD Corp approved in 2025 (+32% YoY), driven by NIMP 2030, Care Economy, and AI upskilling policies.",
+  },
 ];
 
 const inactiveCountries = [
-  { flag: "🇲🇾", name: "Malaysia" },
   { flag: "🇻🇳", name: "Vietnam" },
   { flag: "🇵🇭", name: "Philippines" },
   { flag: "🇹🇭", name: "Thailand" },
 ];
 
 const stats = [
-  { icon: MapPin, label: "Markets Active", value: "3" },
+  { icon: MapPin, label: "Markets Active", value: "4" },
   { icon: BarChart3, label: "Sub-Sectors Analysed Per Market", value: "6" },
   { icon: Target, label: "TAM Tracked", value: "USD 1.8B+" },
   { icon: Globe, label: "Countries Mapped", value: "7" },

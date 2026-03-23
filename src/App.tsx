@@ -7,6 +7,7 @@ import LandingPage from "./pages/LandingPage";
 import SingaporePage from "./pages/SingaporePage";
 import IndonesiaPage from "./pages/IndonesiaPage";
 import BangladeshPage from "./pages/BangladeshPage";
+import MalaysiaPage from "./pages/MalaysiaPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/singapore" element={<SingaporePage />} />
           <Route path="/indonesia" element={<IndonesiaPage />} />
           <Route path="/bangladesh" element={<BangladeshPage />} />
+          <Route path="/malaysia" element={<MalaysiaPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

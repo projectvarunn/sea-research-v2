@@ -20,7 +20,6 @@ const sections = [
   { id: "investment", label: "Investment Signals" },
   { id: "horizon-map", label: "Trend Horizon Map" },
   { id: "strategic", label: "Strategic Imperatives" },
-  { id: "risk-register", label: "Risk Register" },
 ];
 
 export default function IndonesiaPage() {
@@ -51,9 +50,10 @@ export default function IndonesiaPage() {
       <div>
         <SectionHeader id="executive-summary" number="ES" title="Executive Summary" />
         <div className="mt-4 space-y-4 text-sm leading-relaxed text-foreground">
-          <p>Indonesia's higher skilling market stands at an inflection point. Three forces are converging simultaneously to create what we assess as a once-in-a-decade structural opportunity: (1) a regulatory super-cycle — from Prakerja 3.0 to PP 46/2023 to MoH CME mandates — that legislates demand into existence; (2) a generational talent crisis across healthcare, manufacturing, and digital sectors that no incumbent can solve at scale without EdTech intermediaries; and (3) a technology step-change in AI-native learning that is compressing content production costs by 60–80% while dramatically expanding personalization at scale.</p>
-          <p>Our analysis covers six sub-sectors: Technology & AI Skilling, Healthcare & Care Economy Skilling, B2B Services (LMS, Corporate Training, Staffing), Soft Skills Training, Advanced Manufacturing & Engineering, and Business, Management & Professional Services. We assess the total addressable market at USD 1.8B in 2024, growing to USD 4.5B by 2029 at a 20% CAGR — driven primarily by B2B corporate mandates, healthcare professional development, and AI-adjacent certification.</p>
-          <p>Our top-conviction calls: Healthcare (CME + AHP) and AI Skilling are CRITICAL priority subsectors with immediate regulatory demand catalysts. B2B LMS and Advanced Manufacturing are HIGH priority with strong 1–3yr structural tailwinds. Soft Skills and Business/Management Skilling offer medium-term opportunities best captured through bundle or distribution partnerships rather than standalone plays.</p>
+          <p>Three things are happening in Indonesia's skilling market at the same time</p>
+          <p>Regulation is forcing demand — Prakerja 3.0, PP 46/2023, MoH's CME mandates. Healthcare, manufacturing, and digital are short on talent and have no good way to fix it fast. And AI has cut content production costs so significantly that personalized skilling is finally unit-economics viable.</p>
+          <p>TAM sits at USD 1.8B today, heading to USD 4.5B by 2029 at 20% CAGR.</p>
+          <p>The clearest bets: Healthcare (CME + AHP) and AI Skilling — demand is here now, not projected. B2B LMS and Advanced Manufacturing are next, 1–3 year horizon. Soft Skills and Business/Management skilling exist but work better as add-ons than standalone plays.</p>
         </div>
         <div className="mt-4">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Priority Sub-Sectors</p>
@@ -349,7 +349,7 @@ export default function IndonesiaPage() {
       {/* STRATEGIC IMPERATIVES */}
       <div>
         <SectionHeader id="strategic" number="8" title="Strategic Imperatives — 'So What' Analysis" subtitle="Strategic implications by sub-sector and top 5 imperatives for 2025–2026." />
-        
+
         {/* Sub-sector breakdown */}
         <h3 className="mt-4 font-heading text-base font-bold text-foreground">Sub-Sector Strategic Analysis</h3>
         <div className="mt-3 overflow-x-auto">
@@ -402,14 +402,7 @@ export default function IndonesiaPage() {
         </div>
       </div>
 
-      {/* RISK REGISTER */}
-      <div>
-        <SectionHeader id="risk-register" number="9" title="Risk Register" />
-        <div className="mt-4 rounded-lg border border-dashed border-border bg-muted/30 p-8 text-center">
-          <p className="font-heading text-lg font-bold text-muted-foreground">Risk Register — Coming Soon</p>
-          <p className="mt-1 text-sm text-muted-foreground">A comprehensive risk register for the Indonesia market is being compiled.</p>
-        </div>
-      </div>
+
     </CountryPageLayout>
   );
 }
