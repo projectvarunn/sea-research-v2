@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const countries = [
   { name: "Singapore", path: "/singapore" },
   { name: "Indonesia", path: "/indonesia" },
+  { name: "Malaysia", path: "/malaysia" },
   { name: "Bangladesh", path: "/bangladesh" },
 ];
 

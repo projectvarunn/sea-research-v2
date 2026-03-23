@@ -309,17 +309,31 @@ export default function MalaysiaPage() {
                 {[
                   { name: "Pandai", funding: "US$ 2.03M (Seed, Jan 2022)", website: "pandai.org", inv: "Y Combinator, 500 Global, Gobi Partners, Cradle Fund", desc: "SaaS-based platform for school students" },
                   { name: "Easyuni", funding: "US$ 1.37M (Series A, 2016)", website: "easyuni.com", inv: "Intres Capital Partners", desc: "Discovery platform for universities" },
-                  { name: "Mindvalley", funding: "Undisclosed — bootstrapped/strategic", website: "mindvalley.com", inv: "Self-funded / Strategic operators", desc: "Global online learning platform for personal growth" },
+                  { name: "Mindvalley", funding: "Undisclosed — bootstrapped/strategic", website: "mindvalley.com", inv: "Self-funded / Strategic investors", desc: "Global online learning platform for personal growth" },
                   { name: "FrogAsia", funding: "Corporate-backed, RM 1.5B+ gov contract", website: "frogasia.com", inv: "YTL Corporation", desc: "Cloud-based virtual learning (Frog VLE) for government schools" },
+                  { name: "Zap Zap Math", funding: "Undisclosed Seed/Pre-Series A", website: "zapzapmath.com", inv: "Cradle Fund, angels", desc: "Gaming app for practicing Math" },
                   { name: "ReSkills", funding: "Bootstrapped + Cradle CIP300 (~RM 300K, 2020)", website: "reskills.com", inv: "Cradle Fund Sdn Bhd", desc: "Multi disciplinary learning solutions" },
+                  { name: "Uni Enrol", funding: "Undisclosed Seed (2018–2019)", website: "unienrol.com", inv: "Cowork Ventures, Maybank New York", desc: "Platform to assist students in selecting programs" },
+                  { name: "EduAdvisor", funding: "Undisclosed Seed (2016–2018)", website: "eduadvisor.my", inv: "Cradle Fund, private angels", desc: "Comparison portal for colleges and courses" },
                   { name: "eLearningMinds", funding: "Undisclosed early-stage (2017)", website: "learnxasiapacific.com", inv: "Gobi Partners, angel investors", desc: "Digital learning content design, LMS consulting" },
+                  { name: "Intergreat Education", funding: "Series A — est. US$ 3–5M (2019)", website: "intergreat.com.my", inv: "Gobi Partners", desc: "Cross-border education platform and placement" },
                   { name: "Accredify (Malaysia ops)", funding: "SGD 3.5M (Series A, 2021)", website: "accredify.io", inv: "Quest Ventures, East Ventures", desc: "Blockchain-powered digital credentials" },
+                  { name: "EduSpaze Malaysia Portfolio", funding: "Up to S$ 500K seed per cohort", website: "eduspaze.com", inv: "Enterprise Singapore", desc: "Accelerator providing seed funding to EdTech startups" },
                   { name: "TalentLabs", funding: "Undisclosed Seed (2021)", website: "talentlabs.org", inv: "Cradle Fund, angels", desc: "Full-stack technology career platform" },
                   { name: "NEXT Academy", funding: "Undisclosed early-stage (2015)", website: "nextacademy.com", inv: "1337 Ventures, angels", desc: "Coding bootcamp and tech school" },
                   { name: "GoGet (Learning Vertical)", funding: "US$ 2M+ (Series A, 2019)", website: "goget.my", inv: "Cradle Seed Ventures, RHL Ventures", desc: "On-demand gig workforce with upskilling vertical" },
+                  { name: "Coding Chipmunk", funding: "Undisclosed Pre-Seed (2019–2020)", website: "codingchipmunk.com", inv: "Cradle CIP150 grant", desc: "AI-powered adaptive online mathematics tutoring" },
+                  { name: "Leanpitch Technologies", funding: "Undisclosed Seed (2020)", website: "leanpitch.com", inv: "Cradle Fund, angels", desc: "Agile, Scrum, and product management training" },
                   { name: "Pintar", funding: "Undisclosed Seed (2021–2022)", website: "pintar.com.my", inv: "Gobi Partners, Cradle Seed Ventures", desc: "Workforce development platform" },
-                  { name: "JobStreet Malaysia — Learning", funding: "Corporate acquisition (A$ 524M, 2014) + learning built", website: "jobstreet.com.my", inv: "SEEK Limited", desc: "Career platform with professional development courses" },
-                  { name: "Mereka", funding: "$1.05M total (Seed 2019, ECF 2025)", website: "mereka.io", inv: "Pitch Nominees", desc: "Platform connecting individuals to educational experts" }
+                  { name: "PrestoMall / Ed Vertical", funding: "US$ 20M Series B (2018)", website: "fave.com", inv: "500 Global, SoftBank Ventures Asia", desc: "Consumer lifestyle app with education voucher vertical" },
+                  { name: "JobStreet Malaysia — Learning", funding: "Corporate acquisition (A$ 524M, 2014)", website: "jobstreet.com.my", inv: "SEEK Limited", desc: "Career platform with professional development courses" },
+                  { name: "GuruLab", funding: "Undisclosed Seed (2022)", website: "mygurulab.com", inv: "Wright Partners", desc: "Online platform providing English language tutoring" },
+                  { name: "My AOne Learning", funding: "Undisclosed Seed (2020)", website: "aone.com.my", inv: "ScaleUp Malaysia, Wavemaker Partners", desc: "Provider of school and learning center management" },
+                  { name: "GuruPanda", funding: "Undisclosed Seed (2021)", website: "gurupanda.com.my", inv: "Undisclosed", desc: "Online learning platform for pre schoolers" },
+                  { name: "Anak2U", funding: "$24k Seed (2020)", website: "anak2u.com.my", inv: "Penang i4 SeedFund, SuperCharger", desc: "Provider of kindergarten and nursery management" },
+                  { name: "Mereka", funding: "$1.05M total (Seed 2019, ECF 2025)", website: "mereka.io", inv: "Pitch Nominees", desc: "Platform connecting individuals to educational experts" },
+                  { name: "GIFT.ed", funding: "$1M pre-seed (2022)", website: "gift-ed.com", inv: "IMC Pan Asia Alliance", desc: "Virtual Learning platform for cohort leadership" },
+                  { name: "Jazro", funding: "$300k Seed (2024)", website: "jazro.com.my", inv: "Gobi Partners", desc: "Robotics Education Company" }
                 ].map((c, i) => (
                   <tr key={i} className="border-b border-border transition-colors hover:bg-muted/30">
                     <td className="px-3 py-2 font-medium text-foreground">{c.name}</td>
