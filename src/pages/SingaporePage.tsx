@@ -442,6 +442,7 @@ export default function SingaporePage() {
             <thead>
               <tr className="border-b border-border bg-muted/50">
                 <th className="px-3 py-2 text-left font-semibold">Company</th>
+                <th className="px-3 py-2 text-left font-semibold">Website</th>
                 <th className="px-3 py-2 text-left font-semibold">Funding (USD)</th>
                 <th className="px-3 py-2 text-left font-semibold">Stage</th>
                 <th className="px-3 py-2 text-left font-semibold">Investors</th>
@@ -449,42 +450,45 @@ export default function SingaporePage() {
             </thead>
             <tbody>
               {[
-                ["Eruditus", "$961M", "Series F", "SoftBank Vision Fund, Accel, Chan Zuckerberg Initiative, Leeds Equity Partners, FullCircle Capital, Bertelsmann"],
-                ["LingoAce", "$180M", "Series C", "Owl Ventures, Tiger Global, Sequoia Capital China, Shunwei Capital"],
-                ["BrightChamps", "$63.3M", "Series C", "Premji Invest, Binance Labs, Jungle Ventures, Owl Ventures"],
-                ["Cialfo", "$57M", "Series B", "January Capital, Vulcan Capital, Seed Capital, Bisk Ventures, DLF Venture, Alto Partners"],
-                ["Docquity", "$57.5M", "Series C", "Openspace Ventures, MassMutual Asia, Patamar Capital"],
-                ["ErudiFi", "$22.2M", "Series A + Debt", "Openspace Ventures, Monk's Hill Ventures"],
-                ["Adventus", "$44.3M", "Series B", "Tiger Global, B Capital Group, Openspace Ventures"],
-                ["Manabie", "$42.8M", "Series B", "Gojo & Company, Mistletoe, East Ventures"],
-                ["XSEED", "$20M", "Series B", "Lightbox Ventures, Omidyar Network, GGV Capital"],
-                ["Geniebook", "$17.6M", "Series A", "East Ventures, Lightspeed Venture Partners"],
-                ["PREP", "$9M", "Series A", "Atinum Investment, KB Investment"],
-                ["Clevai", "$6.75M", "Series A", "Wavemaker Partners, East Ventures"],
-                ["Edufi", "$6.1M", "Pre-Seed", "EduSpaze, undisclosed angels"],
-                ["Knowledge Platform", "$5M", "Series A", "DLF Venture, BDO Unibank, others"],
-                ["Amdon", "$3.91M", "Private Equity", "Chip Eng Seng Corporation"],
-                ["NewCampus", "$4.52M", "Seed", "500 Global, Insignia Ventures Partners"],
-                ["Cerebry", "$3.65M", "Seed", "January Capital, undisclosed investors"],
-                ["Doyobi", "$3.8M", "Seed (Acquired)", "Monk's Hill Ventures, Carousell CEO"],
-                ["Taidii", "$2.95M", "Seed / Venture", "Wavemaker Partners, NUS Technology Holdings, Spiral Ventures, TNB Ventures"],
-                ["Kempus", "$3M", "Seed", "Not Publicly Available"],
-                ["EWA", "$2.7M", "Seed", "Not Publicly Available"],
-                ["Flying Cape", "$1.5M", "Series A", "Startup-O, EduSpaze, Spaze Ventures"],
-                ["Tueetor", "$1.5M", "Seed", "Not Publicly Available"],
-                ["Strive", "$1.42M", "Seed", "Y Combinator, Goodwater Capital, Mastercard, Soma Capital"],
-                ["Kinobi", "$2.02M", "Seed", "Antler, undisclosed investors"],
-                ["Jackett", "$1M", "Seed", "Forge Ventures, Entrepreneur First, Epic Angels Network"],
-                ["ACKTEC Technologies", "$1M", "Seed", "Undisclosed investors"],
-                ["Teamie", "$1.1M", "Pre-Series A", "Undisclosed investors"],
-                ["Rocket Academy", "$1.1M", "Seed", "Undisclosed investors"],
-                ["Dim Sum Warriors", "$500K", "Seed", "EduSpaze, Plug and Play APAC, Epic Angels Network"],
-                ["Noodle Factory", "$500K", "Seed", "EduSpaze, SuperCharger Ventures, angel investors"],
-                ["VivaLing", "$367K", "Seed", "EduSpaze"],
-                ["Genius U", "IPO (NYSE American: GNS)", "Publicly Listed", "Publicly Listed — IPO April 2022"],
-              ].map(([company, funding, stage, investors], i) => (
+                ["Eruditus", "https://eruditus.com", "$961M", "Series F", "SoftBank Vision Fund, Accel, Chan Zuckerberg Initiative, Leeds Equity Partners, FullCircle Capital, Bertelsmann"],
+                ["LingoAce", "https://lingoace.com", "$180M", "Series C", "Owl Ventures, Tiger Global, Sequoia Capital China, Shunwei Capital"],
+                ["BrightChamps", "https://brightchamps.com", "$63.3M", "Series C", "Premji Invest, Binance Labs, Jungle Ventures, Owl Ventures"],
+                ["Cialfo", "https://cialfo.co", "$57M", "Series B", "January Capital, Vulcan Capital, Seed Capital, Bisk Ventures, DLF Venture, Alto Partners"],
+                ["Docquity", "https://docquity.com", "$57.5M", "Series C", "Openspace Ventures, MassMutual Asia, Patamar Capital"],
+                ["ErudiFi", "https://erudifi.com", "$22.2M", "Series A + Debt", "Openspace Ventures, Monk's Hill Ventures"],
+                ["Adventus", "https://adventus.io", "$44.3M", "Series B", "Tiger Global, B Capital Group, Openspace Ventures"],
+                ["Manabie", "https://manabie.com", "$42.8M", "Series B", "Gojo & Company, Mistletoe, East Ventures"],
+                ["XSEED", "https://xseededucation.com", "$20M", "Series B", "Lightbox Ventures, Omidyar Network, GGV Capital"],
+                ["Geniebook", "https://geniebook.com", "$17.6M", "Series A", "East Ventures, Lightspeed Venture Partners"],
+                ["PREP", "https://prep.vn", "$9M", "Series A", "Atinum Investment, KB Investment"],
+                ["Clevai", "https://clevai.edu.vn", "$6.75M", "Series A", "Wavemaker Partners, East Ventures"],
+                ["Edufi", "https://edufi.co", "$6.1M", "Pre-Seed", "EduSpaze, undisclosed angels"],
+                ["Knowledge Platform", "https://knowledgeplatform.com", "$5M", "Series A", "DLF Venture, BDO Unibank, others"],
+                ["Amdon", "https://amdon.com", "$3.91M", "Private Equity", "Chip Eng Seng Corporation"],
+                ["NewCampus", "https://newcampus.com", "$4.52M", "Seed", "500 Global, Insignia Ventures Partners"],
+                ["Cerebry", "https://cerebry.co", "$3.65M", "Seed", "January Capital, undisclosed investors"],
+                ["Doyobi", "https://doyobi.com", "$3.8M", "Seed (Acquired)", "Monk's Hill Ventures, Carousell CEO"],
+                ["Taidii", "https://taidii.com", "$2.95M", "Seed / Venture", "Wavemaker Partners, NUS Technology Holdings, Spiral Ventures, TNB Ventures"],
+                ["Kempus", "https://kempus.com", "$3M", "Seed", "Not Publicly Available"],
+                ["EWA", "https://ewa.com", "$2.7M", "Seed", "Not Publicly Available"],
+                ["Flying Cape", "https://flyingcape.com.sg", "$1.5M", "Series A", "Startup-O, EduSpaze, Spaze Ventures"],
+                ["Tueetor", "https://tueetor.com", "$1.5M", "Seed", "Not Publicly Available"],
+                ["Strive", "https://strivemath.com", "$1.42M", "Seed", "Y Combinator, Goodwater Capital, Mastercard, Soma Capital"],
+                ["Kinobi", "https://kinobi.asia", "$2.02M", "Seed", "Antler, undisclosed investors"],
+                ["Jackett", "https://jackett.io", "$1M", "Seed", "Forge Ventures, Entrepreneur First, Epic Angels Network"],
+                ["ACKTEC Technologies", "https://acktec.com", "$1M", "Seed", "Undisclosed investors"],
+                ["Teamie", "https://theteamie.com", "$1.1M", "Pre-Series A", "Undisclosed investors"],
+                ["Rocket Academy", "https://rocketacademy.co", "$1.1M", "Seed", "Undisclosed investors"],
+                ["Dim Sum Warriors", "https://dimsumwarriors.com", "$500K", "Seed", "EduSpaze, Plug and Play APAC, Epic Angels Network"],
+                ["Noodle Factory", "https://noodlefactory.ai", "$500K", "Seed", "EduSpaze, SuperCharger Ventures, angel investors"],
+                ["VivaLing", "https://vivaling.com", "$367K", "Seed", "EduSpaze"],
+                ["Genius U", "https://geniusu.com", "IPO (NYSE American: GNS)", "Publicly Listed", "Publicly Listed — IPO April 2022"],
+              ].map(([company, website, funding, stage, investors], i) => (
                 <tr key={i} className="border-b border-border">
                   <td className="px-3 py-2 font-medium text-foreground">{company}</td>
+                  <td className="px-3 py-2">
+                    <a href={website} target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">Website</a>
+                  </td>
                   <td className="px-3 py-2 text-foreground">{funding}</td>
                   <td className="px-3 py-2 text-muted-foreground">{stage}</td>
                   <td className="max-w-sm px-3 py-2 text-muted-foreground">{investors}</td>

@@ -275,25 +275,41 @@ export default function IndonesiaPage() {
 
         {/* Funding Events */}
         <h3 className="mt-6 font-heading text-base font-bold text-foreground">Notable Funding Events in Indonesian EdTech</h3>
-        <div className="mt-3 space-y-3">
-          {[
-            { company: "Ruangguru", amount: "$205M", stage: "Series C", investors: "General Atlantic, GGV Capital, Tiger Global, East Ventures, UOB Venture Management, Venturra Capital, EDBI" },
-            { company: "Zenius", amount: "$40M+ (operations ceased 2024)", stage: "Series B", investors: "MDI Ventures, Northstar Group, Alpha JWC Ventures, Openspace Ventures" },
-            { company: "CoLearn", amount: "$10M", stage: "Series A", investors: "Alpha Wave Incubation, GSV Ventures, Sequoia Capital India Surge, AC Ventures" },
-            { company: "Cakap", amount: "~$17.5M total", stage: "Series C", investors: "MDI Ventures (Centauri Fund), Heritas Capital, KB Investment, Indonesia Impact Fund" },
-            { company: "Quipper", amount: "~$10M raised; Acquired ~$39M (2015)", stage: "Acquired", investors: "Atomico, Benesse Holdings — Acquired by Recruit Holdings" },
-            { company: "Pintek", amount: "$35M+", stage: "Series A", investors: "Kaizenvest, Heritas Capital, Blue7, Finch Capital, Global Founder Capital, Accion Venture Lab" },
-            { company: "PINTAR", amount: "$5.2M+", stage: "Pre-Series A", investors: "Havez Capital, SIG Venture Capital, AppWorks, GDP Venture (Djarum Group)" },
-            { company: "Gredu", amount: "$4M", stage: "Series A", investors: "Intudo Ventures, Vertex Ventures — Acquired by PINTAR Aug 2024" },
-            { company: "Hacktiv8", amount: "$3M", stage: "Pre-Series A", investors: "East Ventures, Sovereign's Capital, SMDV, Skystar Capital" },
-          ].map((f, i) => (
-            <div key={i} className="flex items-start gap-4 rounded-lg border-l-4 border-primary/30 bg-card p-3">
-              <div className="min-w-0 flex-1">
-                <p className="font-semibold text-foreground">{f.company} — {f.amount}</p>
-                <p className="text-xs text-muted-foreground">{f.stage} · {f.investors}</p>
-              </div>
-            </div>
-          ))}
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="border-b border-border bg-muted/50">
+                <th className="px-3 py-2 text-left font-semibold">Company</th>
+                <th className="px-3 py-2 text-left font-semibold">Website</th>
+                <th className="px-3 py-2 text-left font-semibold">Funding (USD)</th>
+                <th className="px-3 py-2 text-left font-semibold">Stage</th>
+                <th className="px-3 py-2 text-left font-semibold">Investors</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Ruangguru", "https://ruangguru.com", "$205M", "Series C", "General Atlantic, GGV Capital, Tiger Global, East Ventures, UOB Venture Management, Venturra Capital, EDBI"],
+                ["Zenius", "https://zenius.net", "$40M+ (operations ceased 2024)", "Series B", "MDI Ventures, Northstar Group, Alpha JWC Ventures, Openspace Ventures"],
+                ["CoLearn", "https://colearn.id", "$10M", "Series A", "Alpha Wave Incubation, GSV Ventures, Sequoia Capital India Surge, AC Ventures"],
+                ["Cakap", "https://cakap.com", "~$17.5M total", "Series C", "MDI Ventures (Centauri Fund), Heritas Capital, KB Investment, Indonesia Impact Fund"],
+                ["Quipper", "https://quipper.com", "~$10M raised; Acquired ~$39M (2015)", "Acquired", "Atomico, Benesse Holdings — Acquired by Recruit Holdings"],
+                ["Pintek", "https://pintek.id", "$35M+", "Series A", "Kaizenvest, Heritas Capital, Blue7, Finch Capital, Global Founder Capital, Accion Venture Lab"],
+                ["PINTAR", "https://pintar.co", "$5.2M+", "Pre-Series A", "Havez Capital, SIG Venture Capital, AppWorks, GDP Venture (Djarum Group)"],
+                ["Gredu", "https://gredu.co", "$4M", "Series A", "Intudo Ventures, Vertex Ventures — Acquired by PINTAR Aug 2024"],
+                ["Hacktiv8", "https://hacktiv8.com", "$3M", "Pre-Series A", "East Ventures, Sovereign's Capital, SMDV, Skystar Capital"],
+              ].map(([company, website, funding, stage, investors], i) => (
+                <tr key={i} className="border-b border-border">
+                  <td className="px-3 py-2 font-medium text-foreground">{company}</td>
+                  <td className="px-3 py-2">
+                    <a href={website} target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">Website</a>
+                  </td>
+                  <td className="px-3 py-2 text-foreground">{funding}</td>
+                  <td className="px-3 py-2 text-muted-foreground">{stage}</td>
+                  <td className="min-w-xs px-3 py-2 text-muted-foreground">{investors}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
 
