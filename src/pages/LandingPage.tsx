@@ -28,18 +28,23 @@ const activeCountries = [
     path: "/malaysia",
     teaser: "RM 2.62B HRD Corp approved in 2025 (+32% YoY), driven by NIMP 2030, Care Economy, and AI upskilling policies.",
   },
+  {
+    flag: "🇵🇭",
+    name: "Philippines",
+    path: "/philippines",
+    teaser: "US$40B+ BPO sector facing AI disruption, creating urgent demand for 1.8M workers to reskill alongside NAISR 2.0 mandates.",
+  },
 ];
 
 const inactiveCountries = [
   { flag: "🇻🇳", name: "Vietnam" },
-  { flag: "🇵🇭", name: "Philippines" },
   { flag: "🇹🇭", name: "Thailand" },
 ];
 
 const stats = [
-  { icon: MapPin, label: "Markets Active", value: "4" },
+  { icon: MapPin, label: "Markets Active", value: "5" },
   { icon: BarChart3, label: "Sub-Sectors Analysed Per Market", value: "6" },
-  { icon: Target, label: "TAM Tracked", value: "USD 1.8B+" },
+  { icon: Target, label: "TAM Tracked", value: "USD 2.5B+" },
   { icon: Globe, label: "Countries Mapped", value: "7" },
 ];
 

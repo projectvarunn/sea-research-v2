@@ -4,6 +4,7 @@ const countries = [
   { name: "Singapore", path: "/singapore" },
   { name: "Indonesia", path: "/indonesia" },
   { name: "Malaysia", path: "/malaysia" },
+  { name: "Philippines", path: "/philippines" },
   { name: "Bangladesh", path: "/bangladesh" },
 ];
 
